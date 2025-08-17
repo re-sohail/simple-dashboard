@@ -3,6 +3,7 @@ import HomePage from "./pages/home/home-page";
 import Layout from "./layout/layout";
 import DashboardPage from "./pages/dashboard/dashboard-page";
 import SettingsPage from "./pages/settings/settings-page";
+import UserPage from "./pages/user/user-page";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/dashboard" element={<Layout />}>
           {/* Child Routes */}
           <Route index element={<DashboardPage />} />
+          <Route path="users" element={<UserPage />} />
           <Route path="settings" element={<SettingsPage />} />
         </Route>
       </Routes>
